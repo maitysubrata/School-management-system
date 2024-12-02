@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Month</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #005cbf;
+        }
+        .login-btn {
+            position: absolute;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            width: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            top: 5%;
+            left: 92.5%;
+        }
+        .login-btn:hover {
+            background-color: #165cb1;
+        }
+        .login-btn1 {
+            position: absolute;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            width: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            top: 5%;
+            left: 2.5%;
+        }
+        .login-btn1:hover {
+            background-color: #165cb1;
+        }
+    </style>
+</head>
+<body>
+    <form action="homepage.html" method="post">
+        <button type="submit" class="login-btn">Logout</button>
+</form>
+<form action="showteacher.html" method="post">
+        <button type="submit" class="login-btn1">Back</button>
+</form>
+    <div class="container">
+        <h1>Select Attendance Month</h1>
+        <form action="viewsalary2020.php">
+            <div class="radio-group">
+                <label><input type="radio" id="january" name="month" value="january" class="months"> 2024</label>
+                <label><input type="radio" id="february" name="month" value="february"> 2023</label>
+                <label><input type="radio" id="march" name="month" value="march"> 2022</label>
+                <label><input type="radio" id="april" name="month" value="april"> 2021</label>
+                <label><input type="radio" id="may" name="month" value="may"> 2020</label>
+            </div>
+            <br>
+            <input class="submit-btn" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

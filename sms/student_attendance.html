@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style type="text/css">
+    	.login-btn {
+        	position: absolute;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            width: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            top: 50%;
+            left: 48%;
+        }
+        .login-btn:hover {
+            background-color: #165cb1;
+        }
+        .login-btn_new {
+        	position: absolute;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            width: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            top: 15%;
+            left: 93%;
+        }
+        .login-btn_new:hover {
+            background-color: #165cb1;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Student Attendance</h1>
+    </header>
+    <form action="student_attendance_display.php" method="post">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="name-input">Name:</label>
+                    <input type="text" class="form-control" id="name-input" name="name" placeholder="Enter student's name">
+                </div><br/>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="class-input">Class:</label>
+                    <input type="text" class="form-control" id="class-input" name="class" placeholder="Enter class">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="date-input">Date:</label>
+                    <input type="date" class="form-control" id="date-input" name="date">
+                </div>
+            </div><br/>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Attendance:</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="attendance" value="present" required>
+                        <label class="form-check-label" for="present-radio">Present</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="attendance" value="absent" required>
+                        <label class="form-check-label" for="absent-radio">Absent</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="login-btn">Submit</button>
+    </form>
+<form action="homepage.html" method="post">
+		<button type="submit" class="login-btn_new">Logout</button>
+</form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

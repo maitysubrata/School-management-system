@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif; /* Set a base font family */
+      display: flex; /* Make the body a flex container */
+    }
+
+    .image {
+      position: absolute;
+      right: 2%;
+      padding: 8px; /* Add padding around the image */
+      background-color: #f5f5f5; /* Light gray background for the image container */
+       /* Make the image container flexible and take up remaining space */
+    }
+
+    .content {
+      display: flex; /* Make the content wrapper a flex container */
+      flex-direction: column; /* Stack elements vertically */
+      margin: 10px; /* Add margin for spacing */
+    }
+
+    .a2 {
+      top: 10%;
+      left: 9%;
+      position: absolute;
+      /* Removed absolute positioning */
+      margin: 10px; /* Margin for spacing */
+      width: 250px; /* Set width for consistency */
+      height: 250px; /* Set height for consistency */
+      border: 1px solid #ddd; /* Lighter border */
+      border-radius: 15px; /* Rounded corners */
+      background: linear-gradient(to bottom, #fff 0%, #eef2f7 100%); /* Gradient background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+      text-align: center; /* Center text within the box */
+      display: flex; /* Allow stacking elements inside */
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: space-between; /* Distribute items vertically */
+      align-items: flex-middle; /* Center text horizontally within the box */
+      text-decoration: none;
+    }
+    .a4{
+      top: 53%;
+      left: 9%;
+      position: absolute;
+      margin: 10px; /* Margin for spacing */
+      width: 250px; /* Set width for consistency */
+      height: 250px; /* Set height for consistency */
+      border: 1px solid #ddd; /* Lighter border */
+      border-radius: 15px; /* Rounded corners */
+      background: linear-gradient(to bottom, #fff 0%, #eef2f7 100%); /* Gradient background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+      text-align: center; /* Center text within the box */
+      display: flex; /* Allow stacking elements inside */
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: space-between; /* Distribute items vertically */
+      align-items: flex-middle; /* Center text horizontally within the box */
+      text-decoration: none;
+    }
+
+    .profile {
+      font-size: 22px; /* Adjusted font size */
+      color: #333; /* Dark gray text */
+      margin-bottom: 20px;
+    }
+    .login-btn1 {
+          position: absolute;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            width: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            top: 3%;
+            left: 2.5%;
+        }
+        .login-btn1:hover {
+            background-color: #165cb1;
+        }
+  </style>
+</head>
+<body>
+  <form action="homepage.html" method="post">
+    <button type="submit" class="login-btn1">Back</button>
+</form>
+  <div class="image">
+    <img src="student.png" style="width: 1000px; height: 660px;right: 2%;">
+  </div>
+  <div class="content">
+    <a href="student.html" class="a2">
+      <i class="fas fa-user" style="font-size: 150px; color: #333;margin-top: 15px;"></i>
+      <span class="profile">Profile</span>
+    </a>
+    <a href="student1.html" class="a4">
+      <i class="fa-wallet" style="font-size: 150px; color: #333;"></i>
+      <span class="profile">Attendance</span>
+    </a>
+  </div>
+</body>
+</html>
